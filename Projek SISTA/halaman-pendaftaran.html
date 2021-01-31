@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Daftar Seminar</title>
+
+  <style>
+    
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      font-family: sans-serif;
+    }
+    .logo{
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    nav{
+      display: flex;
+     background-color: #e6e6e6;
+      justify-content: flex-end;
+      padding: 20px 0;
+    }
+
+    nav ul{
+      display: flex;
+      list-style: none;
+      margin-right: 10px;
+
+    }
+    nav ul a{
+      color: blue;
+    }
+
+    nav ul li a:hover  {
+      color: white;
+    }
+    .head-1 ul li{
+      display: flex;
+      margin: 0px 50px;
+    }
+    /* Hamburger Menu */
+    .menu-toggle {
+
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 28px;
+      height: 3px;
+      background-color: white;
+      border-radius: 3px;
+    }
+
+    /* Responsive table */
+    @media screen and (max-width: 768px){
+
+      nav ul {
+        width: 50%;
+      }
+    }
+    @media screen and (max-width: 576px){
+      .menu-toggle {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+      }
+    }
+    main{
+      margin: 0px 20px 0px 20px;
+    }
+    main form fieldset {
+      background-color: white;
+    }
+    main  form fieldset legend {
+      margin-left: 10px;
+      background-color: white;
+    }
+    .main-1 ul li {
+      display:flex; 
+      list-style: none;
+      margin-left: 5px;
+    }
+    .container{
+      display: flex;
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+    .form-1{
+      display: flex;
+    }
+    .form-2{
+      display: flex;
+    }
+    .form-3{
+      display: flex;
+    }
+    .form-4{
+      display: flex;
+    }
+    .form-5{
+    display: flex;
+    }
+    /*.main-2 li{
+      display: flex;
+      justify-content: flex-end;
+    } */
+    .form-1 input{
+      margin: 0px 25px;
+    }
+
+    .form-2 input{
+      margin: 0px 10px;
+    }
+    .form-3 input{
+      margin: 0px 10px;
+    }
+    .form-4 input{
+      margin: 0px 10px;
+    }
+    .form-5 input{
+      display: flex;
+      margin: 0px 10px;
+    }
+
+  </style>
+
+
+</head>
+<body>
+<header>
+      <div class="logo">
+      <h2>Seminar Informasi Seminar Tugas Akhir - Sista</h2>
+    </div>
+    <br>
+  <nav>
+
+    <ul>
+
+      <li style="margin-right: 20px"><a href="">Home</a></li>
+      <li style="margin-right: 15px"><a href="">Jadwal</a></li>
+      <li  style="margin-right: 15px"><a href="">Detail Jadwal</a></li>
+    </ul>
+    <div class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </nav>
+  <div class="head-1">
+    <ul>
+      <li>Mahasiswa Seminar : Diego Armando (0102002)</li>
+      <li>Judul : Rancangan Bangun Aplikasi Seminar Tugas Akhir Berbasis Web Menggunakan MVC Framework</li>
+      <li>Senin : Senin, 4 Januari 2021, 10:00</li>    
+    </ul>
+  </div>
+</header>
+<br>
+  <main>
+    <div class="main">
+  <form>
+    <fieldset>
+      <legend>Seminar Proposal</legend>
+      <div class="container">
+    <div class="main-1">
+     <ul>
+      <div class="form-1">
+      <li>NIM :</li>
+      <input type="text" name="NIM" value="">
+      </div>
+      <br>
+      <div class="form-2">
+      <li>Nama :</li>
+      <input type="text" name="NIM" value="">
+      </div>
+      <br>
+      <div class="form-3">
+      <li>Prodi :</li>
+      <input list="list" name="asal_kota">
+        <datalist id="list">
+          <option value="Sistem Informasi">
+          <option value="Teknik Informasi">
+        </datalist>
+      </div>
+      <br>
+      <div class="form-4">
+      <li>Program :</li>
+      <input type="radio" name="jk" value="L" checked="" /> D3
+        <input type="radio" name="jk" value="P" /> S1 Regular
+        <input type="radio" name="jk" value="L" checked="" /> S1 Fast Trackt
+        <input type="radio" name="jk" value="P" /> S2
+      </div>
+        <br>
+        <div class="form-5">
+      <input type="submit" name="proses" value="Daftar">
+      </div>
+      <br>
+      </div>
+    </ul>
+  </div>
+</div>
+    </fieldset>
+  </form>
+</div>
+</main>
+</body>
+</html>

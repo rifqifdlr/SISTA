@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Detail Jadwal Seminar</title>
+
+  <style>
+    
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      font-family: sans-serif;
+    }
+    .logo{
+      text-align: center;
+      margin-top: 10px;
+    }
+    .row{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    nav{
+      display: flex;
+     background-color: #e6e6e6;
+      justify-content: flex-end;
+      padding: 20px 0;
+    }
+
+    nav ul{
+      display: flex;
+      list-style: none;
+      margin-right: 10px;
+
+    }
+    nav ul a{
+      color: blue;
+    }
+
+    nav ul li a:hover  {
+      color: white;
+    }
+    /* Hamburger Menu */
+    .menu-toggle {
+
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+
+    }
+
+    .media-toggle input {
+      position: absolute;
+      width: 40px;
+      height: 28px;
+      opacity: 
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 28px;
+      height: 3px;
+      background-color: white;
+      border-radius: 3px;
+      margin-right: 10px;
+    }
+
+    /* Responsive table */
+    @media screen and (max-width: 768px){
+
+      nav ul {
+        width: 50%;
+      }
+    }
+    @media screen and (max-width: 576px){
+      .media-toggle {
+        display: flex;
+      }
+
+      nav ul {
+        display: none;
+      }
+      form {
+        width: 25%;
+      }
+    }
+    main{
+      margin: 0px 20px 0px 20px;
+    }
+    main form fieldset {
+      background-color: white;
+    }
+    main  form fieldset legend {
+      margin-left: 10px;
+      background-color: white;
+    }
+    .main-1 ul li {
+      display:flex; 
+      list-style: none;
+      margin-left: 5px;
+    }
+    .main-2 li{
+      display: flex;
+      margin-right: 10px;
+    }
+    .main-3{
+      display: flex;
+      margin-top: 5px;
+    }
+  </style>
+
+
+</head>
+<body>
+<header>
+      <div class="logo">
+      <h2>Seminar Informasi Seminar Tugas Akhir - Sista</h2>
+    </div>
+    <br>
+  <nav>
+
+    <ul>
+
+      <li style="margin-right: 20px"><a href="index.html">Home</a></li>
+      <li style="margin-right: 15px"><a href="jadwal-seminar.html">Jadwal</a></li>
+      <li  style="margin-right: 15px"><a href="detail-jadwal-seminar.html">Detail Jadwal</a></li>
+    </ul>
+    <div class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  </nav>
+</header>
+<br>
+  <main>
+    <div class="main">
+  <form>
+    <fieldset>
+      <legend>Seminar Proposal</legend>
+      <div class="container">
+        <div class="row">
+    <div class="main-1">
+     <ul>
+
+      <li>Nim : 0102002</li>
+      <br>
+      <li>Nama : Dioego Armando</li>
+      <br>
+      <li>Prodi : Teknik Informasi</li>
+      <br>
+      <li>Judul : Rancang Bangun Aplikasi Seminar Akhir Berbasis Web Menggunakan MVC Framework</li>
+      <br>
+      <li>Waktu : Senin, 4 Januari 2021, 10:00</li>
+      <br>
+      <li>Ruang : Zoom Online</li>
+      <br>
+    </div>
+      <div class="main-2">
+      <li>Pembimbing : Sirojul Munir S.SI, M.KOM</li>
+      <br>
+      <li>Penguji : Ahmad Rio M.SI</li>
+      </div>
+    </ul>
+  </div>
+</div>
+</div>
+    </fieldset>
+  </form>
+  <form>
+     <div class="main-3">
+      <input type="submit" name="Daftar_peserta" value="Daftar Peserta">
+      </div>
+      <br>
+  </form>
+</div>
+</main>
+</body>
+</html>
